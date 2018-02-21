@@ -71,9 +71,9 @@ parent(ana, jill).
 parent(jan, sarah).
 parent(smith, sarah).
 
-grandparent(X,Y) :- parent(X,Z),parent(Z,Y).
-siblings(X,Y) :- parent(X,Z),parent(Y,Z), X \= Y.
-cousins(X,Y) :-  findall(Z, (parent(X,M), parent(Z,N), siblings(M,N), M\=N), Y).
+grandparent(X, Y) :- parent(X,Z), parent(Z,Y).
+siblings(X, Y) :- parent(X,Z), parent(Y,Z), X \= Y.
+cousins(X, Y) :-  findall(Z, (parent(X,M), parent(Z,N), siblings(M,N), M\=N), Y).
 
 /* Exersise 6 Function to find the gcd of 2 numbers
  * INPUT: gcd(10, 20, X).
