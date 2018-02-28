@@ -9,7 +9,7 @@
  * snowing.
  *
  * Results:
- * freezing. = false
+ * freezing. = true
  * raining. = 'out of local stack'
  *
  * A better way to code for better results
@@ -26,8 +26,8 @@ freezing :- snowing.
 
 /*******************************************
  * Results:
- * freezing. = false
- * raining. = true
+ * freezing. = true
+ * raining. = false
  ******************************************/
 
 /*******************************************
