@@ -18,7 +18,7 @@ class C extends B
   { p(); q(); } 
 } 
 public class Chapter-5 {
-  public static class main() {
+  public static void main(String []args) {
     A a; 
     C c = new C(); 
     a = c; 
@@ -29,3 +29,12 @@ public class Chapter-5 {
     a.r();
  }
 }
+
+/* Results:
+B.p
+C.q
+B.p
+A.q
+B.p
+C.q
+*/
